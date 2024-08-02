@@ -148,7 +148,7 @@ ChatGPT:
 To write unit tests and benchmarking methods for the Go code provided, you can use the testing package in Go. I'll create a new Go file specifically for tests and benchmarks.
 
 Here is a new file, main_test.go, with unit tests and benchmark methods for the code:
-
+```
 go
 Copy code
 package main
@@ -229,6 +229,7 @@ func BenchmarkPlotGeneration(b *testing.B) {
 		}
 	}
 }
+```
 Instructions for Running the Tests and Benchmarks
 Create the main file and test file:
 
@@ -238,8 +239,10 @@ Install Gonum packages (if not already installed):
 
 sh
 Copy code
+```
 go get gonum.org/v1/gonum/...
 go get gonum.org/v1/plot/...
+```
 Run the tests:
 
 sh
@@ -263,7 +266,7 @@ Here's the corrected main_test.go file:
 go
 Copy code
 package main
-
+```
 import (
 	"fmt"
 	"testing"
@@ -341,6 +344,7 @@ func BenchmarkPlotGeneration(b *testing.B) {
 		}
 	}
 }
+```
 Instructions for Running the Tests and Benchmarks
 Create the main file and test file:
 
